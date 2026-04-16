@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+         <h1 class="main-title">📊 Game Analytics</h1>
+         <p class="subtitle">Аналітика ігрового сервера в реальному часі</p>
+         <button onclick="loadData()">Оновити</button>
+    </div>
+
+  <div class="card">
+    <div class="title">📊 Статистика</div>
+    <div id="stats">Завантаження...</div>
+  </div>
+
+  <div class="card">
+    <div class="title">🧠 AI-аналітика</div>
+    <div id="summary">Завантаження...</div>
+  </div>
+
+  <div class="card">
+    <div class="title">📈 Активність</div>
+    <canvas id="chart"></canvas>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
