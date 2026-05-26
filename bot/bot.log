@@ -12,3 +12,9 @@
 2026-05-24 19:13:00,316 - aiogram.event - INFO - Update id=833650332 is handled. Duration 3890 ms by bot id=8352808241
 2026-05-24 19:13:23,460 - aiogram.event - INFO - Update id=833650333 is handled. Duration 405 ms by bot id=8352808241
 2026-05-24 19:13:48,035 - aiogram.event - INFO - Update id=833650334 is handled. Duration 3275 ms by bot id=8352808241
+2026-05-26 23:01:47,335 - aiogram.dispatcher - INFO - Start polling
+2026-05-26 23:01:48,396 - aiogram.dispatcher - INFO - Run polling for bot @game_analytics_1_bot id=8352808241 - 'Game Analytics Bot'
+2026-05-26 23:03:58,745 - aiogram.event - INFO - Update id=833650335 is handled. Duration 631 ms by bot id=8352808241
+2026-05-26 23:04:00,956 - aiogram.event - INFO - Update id=833650336 is handled. Duration 121 ms by bot id=8352808241
+2026-05-26 23:04:06,101 - aiogram.event - INFO - Update id=833650337 is handled. Duration 3596 ms by bot id=8352808241
+2026-05-26 23:04:10,253 - aiogram.event - INFO - Update id=833650338 is handled. Duration 470 ms by bot id=8352808241
