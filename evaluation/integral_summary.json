@@ -1,0 +1,96 @@
+{
+  "weights": {
+    "quality": 0.5,
+    "time": 0.3,
+    "cost": 0.2
+  },
+  "models": {
+    "claude": {
+      "name": "Claude Opus 4.6",
+      "quality_gpt": 8.3,
+      "quality_claude": 8.4,
+      "quality_avg": 8.35,
+      "time_seconds": 18.75,
+      "cost_usd": 0.02041,
+      "integral_gpt": 0.565,
+      "integral_claude": 0.665,
+      "integral_avg": 0.654
+    },
+    "gemini": {
+      "name": "Gemini 3.1 Pro",
+      "quality_gpt": 8.5,
+      "quality_claude": 8.7,
+      "quality_avg": 8.6,
+      "time_seconds": 26.11,
+      "cost_usd": 0.02176,
+      "integral_gpt": 0.584,
+      "integral_claude": 0.717,
+      "integral_avg": 0.699
+    },
+    "glm": {
+      "name": "GLM-5",
+      "quality_gpt": 8.5,
+      "quality_claude": 8.2,
+      "quality_avg": 8.35,
+      "time_seconds": 63.64,
+      "cost_usd": 0.00451,
+      "integral_gpt": 0.579,
+      "integral_claude": 0.546,
+      "integral_avg": 0.602
+    },
+    "gpt": {
+      "name": "GPT-5.4",
+      "quality_gpt": 8.8,
+      "quality_claude": 8.3,
+      "quality_avg": 8.55,
+      "time_seconds": 8.28,
+      "cost_usd": 0.008,
+      "integral_gpt": 0.902,
+      "integral_claude": 0.802,
+      "integral_avg": 0.898
+    },
+    "grok": {
+      "name": "Grok 4.20",
+      "quality_gpt": 7.4,
+      "quality_claude": 7.2,
+      "quality_avg": 7.3,
+      "time_seconds": 10.58,
+      "cost_usd": 0.00136,
+      "integral_gpt": 0.489,
+      "integral_claude": 0.489,
+      "integral_avg": 0.489
+    },
+    "kimi": {
+      "name": "Kimi K2.5",
+      "quality_gpt": 8.1,
+      "quality_claude": 8.0,
+      "quality_avg": 8.05,
+      "time_seconds": 73.06,
+      "cost_usd": 0.0041,
+      "integral_gpt": 0.407,
+      "integral_claude": 0.44,
+      "integral_avg": 0.451
+    },
+    "qwen": {
+      "name": "Qwen3.5-397B",
+      "quality_gpt": 8.9,
+      "quality_claude": 8.4,
+      "quality_avg": 8.65,
+      "time_seconds": 35.41,
+      "cost_usd": 0.00551,
+      "integral_gpt": 0.834,
+      "integral_claude": 0.734,
+      "integral_avg": 0.834
+    }
+  },
+  "ranking_avg": [
+    "gpt",
+    "qwen",
+    "gemini",
+    "claude",
+    "glm",
+    "grok",
+    "kimi"
+  ],
+  "spearman_correlation": 0.964
+}

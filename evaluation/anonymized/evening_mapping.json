@@ -1,0 +1,355 @@
+{
+  "time_of_day": "evening",
+  "mapping": [
+    {
+      "anon_id": "resp_001",
+      "model_key": "gemini",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_002",
+      "model_key": "qwen",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_003",
+      "model_key": "claude",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_004",
+      "model_key": "grok",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_005",
+      "model_key": "claude",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_006",
+      "model_key": "glm",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_007",
+      "model_key": "gpt",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_008",
+      "model_key": "gemini",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_009",
+      "model_key": "gemini",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_010",
+      "model_key": "kimi",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_011",
+      "model_key": "kimi",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_012",
+      "model_key": "grok",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_013",
+      "model_key": "claude",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_014",
+      "model_key": "glm",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_015",
+      "model_key": "qwen",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_016",
+      "model_key": "glm",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_017",
+      "model_key": "glm",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_018",
+      "model_key": "gpt",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_019",
+      "model_key": "grok",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_020",
+      "model_key": "grok",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_021",
+      "model_key": "claude",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_022",
+      "model_key": "gemini",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_023",
+      "model_key": "glm",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_024",
+      "model_key": "gemini",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_025",
+      "model_key": "qwen",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_026",
+      "model_key": "grok",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_027",
+      "model_key": "kimi",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_028",
+      "model_key": "qwen",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_029",
+      "model_key": "gpt",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_030",
+      "model_key": "glm",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_031",
+      "model_key": "gpt",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_032",
+      "model_key": "kimi",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_033",
+      "model_key": "claude",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_034",
+      "model_key": "grok",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_035",
+      "model_key": "glm",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_036",
+      "model_key": "kimi",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_037",
+      "model_key": "gemini",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_038",
+      "model_key": "claude",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_039",
+      "model_key": "qwen",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_040",
+      "model_key": "qwen",
+      "query_id": "R1"
+    },
+    {
+      "anon_id": "resp_041",
+      "model_key": "qwen",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_042",
+      "model_key": "kimi",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_043",
+      "model_key": "glm",
+      "query_id": "E1"
+    },
+    {
+      "anon_id": "resp_044",
+      "model_key": "kimi",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_045",
+      "model_key": "grok",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_046",
+      "model_key": "grok",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_047",
+      "model_key": "gemini",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_048",
+      "model_key": "qwen",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_049",
+      "model_key": "kimi",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_050",
+      "model_key": "gpt",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_051",
+      "model_key": "gpt",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_052",
+      "model_key": "qwen",
+      "query_id": "W2"
+    },
+    {
+      "anon_id": "resp_053",
+      "model_key": "qwen",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_054",
+      "model_key": "kimi",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_055",
+      "model_key": "claude",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_056",
+      "model_key": "claude",
+      "query_id": "R3"
+    },
+    {
+      "anon_id": "resp_057",
+      "model_key": "glm",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_058",
+      "model_key": "gpt",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_059",
+      "model_key": "claude",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_060",
+      "model_key": "gpt",
+      "query_id": "M2"
+    },
+    {
+      "anon_id": "resp_061",
+      "model_key": "kimi",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_062",
+      "model_key": "grok",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_063",
+      "model_key": "grok",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_064",
+      "model_key": "gemini",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_065",
+      "model_key": "gemini",
+      "query_id": "E2"
+    },
+    {
+      "anon_id": "resp_066",
+      "model_key": "glm",
+      "query_id": "W1"
+    },
+    {
+      "anon_id": "resp_067",
+      "model_key": "gpt",
+      "query_id": "R2"
+    },
+    {
+      "anon_id": "resp_068",
+      "model_key": "gpt",
+      "query_id": "M3"
+    },
+    {
+      "anon_id": "resp_069",
+      "model_key": "claude",
+      "query_id": "M1"
+    },
+    {
+      "anon_id": "resp_070",
+      "model_key": "gemini",
+      "query_id": "M2"
+    }
+  ]
+}

@@ -1,20 +1,43 @@
 import psycopg2
+from psycopg2 import pool
 import os
 from dotenv import load_dotenv
+import logging
 
 load_dotenv()
 
-DB_HOST = os.getenv("DB_HOST")
-DB_PORT = int(os.getenv("DB_PORT"))
-DB_NAME = os.getenv("DB_NAME")
-DB_USER = os.getenv("DB_USER")
+logger = logging.getLogger(__name__)
+
+DB_HOST     = os.getenv("DB_HOST")
+DB_PORT     = int(os.getenv("DB_PORT", 5432))
+DB_NAME     = os.getenv("DB_NAME")
+DB_USER     = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 
-def get_connection():
-    return psycopg2.connect(
+_pool: pool.SimpleConnectionPool | None = None
+
+
+def init_pool() -> None:
+    global _pool
+    _pool = pool.SimpleConnectionPool(
+        minconn=1,
+        maxconn=10,
         host=DB_HOST,
         port=DB_PORT,
         dbname=DB_NAME,
         user=DB_USER,
         password=DB_PASSWORD,
     )
+    logger.info("DB connection pool initialized")
+
+
+def get_connection() -> psycopg2.extensions.connection:
+    global _pool
+    if _pool is None:
+        init_pool()
+    return _pool.getconn()
+
+
+def release_connection(conn: psycopg2.extensions.connection) -> None:
+    if _pool is not None:
+        _pool.putconn(conn)

@@ -2,38 +2,73 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Analytics</title>
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
-    <div class="container">
+  <div class="container">
 
-        <div class="header">
-         <h1 class="main-title">📊 Game Analytics</h1>
-         <p class="subtitle">Аналітика ігрового сервера в реальному часі</p>
-         <button onclick="loadData()">Оновити</button>
+    <div class="header">
+      <h1 class="main-title">📊 Game Analytics</h1>
+      <p class="subtitle">Аналітика ігрового сервера в реальному часі</p>
+      <button onclick="loadData()">🔄 Оновити</button>
     </div>
 
-  <div class="card">
-    <div class="title">📊 Статистика</div>
-    <div id="stats">Завантаження...</div>
+    <div class="card">
+      <div class="title">📊 Статистика</div>
+      <div id="stats">Завантаження...</div>
+    </div>
+
+    <div class="card">
+      <div class="title">🧠 AI-аналітика</div>
+      <div id="summary">Завантаження...</div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="title">📈 Join / Leave</div>
+        <canvas id="chart"></canvas>
+      </div>
+      <div class="card">
+        <div class="title">⏱ Активність по годинах</div>
+        <canvas id="hourlyChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="title">🏆 Топ гравців</div>
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Гравець</th>
+            <th>Сесій</th>
+            <th>Перший вхід</th>
+            <th>Останній вхід</th>
+          </tr>
+        </thead>
+        <tbody id="players-table"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="title">📋 Останні події</div>
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Тип події</th>
+            <th>Гравець</th>
+            <th>Час</th>
+          </tr>
+        </thead>
+        <tbody id="events-table"></tbody>
+      </table>
+    </div>
+
   </div>
-
-  <div class="card">
-    <div class="title">🧠 AI-аналітика</div>
-    <div id="summary">Завантаження...</div>
-  </div>
-
-  <div class="card">
-    <div class="title">📈 Активність</div>
-    <canvas id="chart"></canvas>
-  </div>
-
-</div>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

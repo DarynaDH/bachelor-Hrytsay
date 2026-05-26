@@ -1,99 +1,217 @@
-/* === ШРИФТ === */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+  background: #f0f4f8;
   color: #0f172a;
 }
 
-/* === КОНТЕЙНЕР === */
 .container {
   max-width: 1050px;
-  margin: 80px auto;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
-/* === HEADER === */
 .header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .main-title {
-  font-size: 30px;
-  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   color: #64748b;
-  margin-bottom: 25px;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
-/* === КНОПКА === */
 button {
-  padding: 12px 28px;
+  padding: 10px 24px;
   border: none;
-  border-radius: 14px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #3b82f6, #6366f1);
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
-
-  box-shadow: 0 8px 20px rgba(59,130,246,0.25);
-  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(59,130,246,0.3);
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 12px 28px rgba(59,130,246,0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59,130,246,0.4);
 }
 
-/* === КАРТКИ === */
 .card {
   background: #ffffff;
-  padding: 24px;
-  border-radius: 18px;
-  margin-bottom: 20px;
-
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-  transition: all 0.25s ease;
+  padding: 22px 24px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease;
 }
 
-/* 🔥 hover без муті */
 .card:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.09);
 }
 
-/* === ЗАГОЛОВКИ БЛОКІВ === */
 .title {
-  font-size: 15px;
-  margin-bottom: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
   color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.stats-numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat-num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.stat-value.green { color: #16a34a; }
+.stat-value.red   { color: #dc2626; }
+.stat-value.blue  { color: #2563eb; }
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.stats-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stat-info-item {
+  flex: 1;
+  min-width: 140px;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-info-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.stat-info-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+#summary {
+  white-space: pre-line;
+  line-height: 1.75;
+  font-size: 14px;
+  color: #334155;
+}
+
+canvas {
+  max-height: 240px;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.events-table thead tr {
+  background: #f8fafc;
+}
+
+.events-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.events-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.events-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.events-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
   font-weight: 600;
 }
 
-/* === СТАТИСТИКА === */
-#stats div {
-  margin: 6px 0;
-  font-size: 15px;
+.badge-join  { background: #dcfce7; color: #16a34a; }
+.badge-leave { background: #fee2e2; color: #dc2626; }
+.badge-other { background: #e0f2fe; color: #0284c7; }
+
+@media (max-width: 600px) {
+  .stats-numbers { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* === AI ТЕКСТ === */
-#summary {
-  white-space: pre-line;
-  line-height: 1.7;
-  font-size: 15px;
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
-/* === ГРАФІК === */
-canvas {
-  max-height: 260px;
+@media (max-width: 700px) {
+  .two-col { grid-template-columns: 1fr; }
 }
 
-/* === МАЛЕНЬКИЙ ЕФЕКТ === */
-.card:active {
-  transform: scale(0.99);
-}
+.rank-1 { color: #f59e0b; font-weight: 700; }
+.rank-2 { color: #94a3b8; font-weight: 700; }
+.rank-3 { color: #b45309; font-weight: 700; }
