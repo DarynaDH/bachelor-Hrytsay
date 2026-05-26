@@ -38,8 +38,8 @@ Telegram-бот з інтеграцією великих мовних модел
 
 ### 1. Клонування репозиторію
 ```bash
-git clone https://github.com/[USERNAME]/[REPO_NAME].git
-cd [REPO_NAME]
+git clone https://github.com/DarynaDH/bachelor-Hrytsai.git
+cd bachelor-Hrytsai
 ```
 ### 2. Налаштування конфігурації
 Скопіювати файл `.env.example` у `.env`:
